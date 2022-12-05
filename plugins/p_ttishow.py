@@ -55,7 +55,7 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
                 video="https://telegra.ph/file/03691465baa774e46506d.mp4",                                               
-                                                 caption=f'<b>ʜᴇʏ, {u.mention} 👋🏻\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ɢʀᴏᴜᴘ {message.chat.title}\n\nʏᴏᴜ ᴄᴀɴ ꜰɪɴᴅ ᴍᴏᴠɪᴇꜱ / ꜱᴇʀɪᴇꜱ / ᴀɴɪᴍᴇꜱ ᴇᴛᴄ. ꜰʀᴏᴍ ʜᴇʀᴇ. ᴇɴᴊᴏʏ😉.\n\n<b>┏≫ ғᴇᴇʟ ғʀᴇᴇ ʜᴇʀᴇ</b>\n┣ <b>ᴍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ›› @rb1bots</b></code>\n<b>┗≫ ᴡᴇ ᴡᴇʟᴄᴏᴍᴇ ʏᴏᴜ</b>',
+                                                 caption=f'<b>@rb1official {file_name} \nsɪᴢᴇ : {file_size} \n\n┏➪[ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs](https://t.me/requestbox1official)</b> \n┠➤[ᴊᴏɪɴ ᴘʀᴇᴍɪᴜᴍ](https://t.me/rb1official)</b> \n┠[ᴅᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/know_sarthak16)</b> \n┠➤[ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs](https://t.me/rb1bots)</b> \n┖➪[ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ](https://t.me/requestbox1)</b></b>',
                                                  reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('✘ ᴜᴘᴅᴀᴛᴇs ✘', url='http://t.me/rb1bots') ] ] )
                 )
 
@@ -70,12 +70,12 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('🌐 Support', url=f'https://t.me/rb1bots')
+            InlineKeyboardButton('✘ sᴜᴘᴘᴏʀᴛ ✘', url=f'https://t.me/rb1bots')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b>',
+            text='<b>ʜᴇʟʟᴏ ғʀɪᴇɴᴅs ¡ ᴍʏ ᴀᴅᴍɪɴ ʜᴀs ᴛᴏʟᴅ ᴍᴇ ᴛᴏ ʟᴇᴀᴠᴇ ᴛʜɪs ᴄʜᴀᴛ ! sᴏ ɪ ʜᴀᴠᴇ ᴛᴏ ʟᴇᴀᴠᴇ ! \nᴄᴏɴᴛᴀᴀᴄᴛ ɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ɴᴏᴡ !</b>',
             reply_markup=reply_markup,
         )
 
@@ -109,12 +109,12 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('🌐 Support', url=f'https://t.me/rb1bots')
+            InlineKeyboardButton('✘ sᴜᴘᴘᴏʀᴛ ✘', url=f'https://t.me/rb1bots')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat_, 
-            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b> \nReason : <code>{reason}</code>',
+            text=f'<b>ʜᴇʟʟᴏ ғʀɪᴇɴᴅs ¡ ᴍʏ ᴀᴅᴍɪɴ ʜᴀs ᴛᴏʟᴅ ᴍᴇ ᴛᴏ ʟᴇᴀᴠᴇ ᴛʜɪs ᴄʜᴀᴛ ! sᴏ ɪ ʜᴀᴠᴇ ᴛᴏ ʟᴇᴀᴠᴇ ! \nᴄᴏɴᴛᴀᴀᴄᴛ ɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ɴᴏᴡ !</b> \nʀᴇᴀsᴏɴ : <code>{reason}</code>',
             reply_markup=reply_markup)
         await bot.leave_chat(chat_)
     except Exception as e:
